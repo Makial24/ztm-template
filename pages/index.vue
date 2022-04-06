@@ -30,10 +30,19 @@
         <div class="text-center">
         <h1 class="text-3xl uppercase font-oswald pt-20">Abacus & MindMaths</h1>
         <p class="font-roboto font-light text-grey-500 py-5 px-8">ABACUS is a tool used to solve simple mathematical problem such as addition, subtraction, multiplication, and division. Solving mathematical problem using abacus enables our children to use both their hands. Since our right brain controls the left hand and left brain controls the right hand, this promotes the use of both the left brain and the right brain simultaneously. The stimulation of both brains means learning is enhanced, better concentration on a task, builds confidence and brings out the creativity.</p>
-        <button class="font-oswald uppercase bg-red-500 text-white py-3 px-3">Explore</button>
+        <button class="font-oswald uppercase bg-red-500 text-white py-3 px-3 rounded rounded-lg">Explore</button>
         </div>
         </div>
       <img src="abacus.png" alt="">
+    </div>
+    <div class="grid grid-cols-2 bg-green-400 pl-10 py-5">
+      <img src="vedic.png" alt="">
+      <div id='left-item-column'>
+        <h1 class="text-3xl uppercase font-oswald pt-20 text-center">Vedic Maths</h1>
+        <p class="font-roboto pt-5 pr-10 text-center">
+          VEDIC MATHS has been a proven course to perfom better in Competitive examinations. These formulae describe the way the mind naturally works and are therefore a great help in directing the student to the appropriate method of solution.
+        </p>
+      </div>
     </div>
     </div>
     </template>
