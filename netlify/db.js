@@ -31,6 +31,5 @@ exports.handler = async function (event, context) {
         };
     } catch (error) {
         console.log("Error adding dosument", error);
-        }
     }
 }

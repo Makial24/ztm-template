@@ -1,11 +1,11 @@
 <template>
     <div>
         <div class="bg-[url('/menu-page.jpg')] px-20">
-        <div id='menu' class="grid grid-cols-2 py-5">
-            <div id='menu-left'>
+        <div id="menu" class="grid grid-cols-2 py-5">
+            <div id="menu-left">
                 <img src="logo.png" class="w-[150px]" alt="">
             </div>
-                <div id='menu-right'>
+                <div id="menu-right">
                     <ul class="grid grid-cols-5 test-lg font-oswald text-white pt-10">
                         <li>About Us</li>
                         <nuxt-link to="/menu">Our Menu</nuxt-link>
@@ -73,6 +73,14 @@ export default {
     },
     submitOrder() {
       this.$axios.post('/.netlify/functions/email', {
+        email: document.getElementById('email').value,
+        orders: this.$store.state.orders,
+      })
+        .then(function (response) {
+          alert('Your order has been submitted');
+        });
+
+      this.$axios.post('/.netlift/functions/db', {
         email: document.getElementById('email').value,
         orders: this.$store.state.orders,
       })
