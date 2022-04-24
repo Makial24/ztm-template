@@ -75,7 +75,7 @@ export default {
   },
 
   mounted() {
-    this.user = window.netliftIdentity.currentUser()
+    this.user = window.netlifyIdentity.currentUser()
     if (this.user) {
       this.readOrders();
     }
